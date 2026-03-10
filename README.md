@@ -1,7 +1,7 @@
-🎀 # Cute Calculator
+# Cute Calculator 🎀 
 A simple, aesthetically pleasing web-based calculator built with HTML, CSS, and JavaScript. This project focuses on a clean user interface and smooth interactions for basic arithmetic operations.
 
-✨ # Features
+# Features ✨ 
 Basic Arithmetic: Addition, subtraction, multiplication, and division.
 
 Responsive Design: Works beautifully on both desktop and mobile screens.
@@ -12,13 +12,13 @@ Keyboard Support: Input numbers and operators directly from your keyboard.
 
 Clear Functionality: Quickly reset calculations with the C or AC button.
 
-🚀 # Getting Started
+# Getting Started 🚀 
 To get a local copy up and running, follow these simple steps:
 
-Prerequisites
+## Prerequisites
 You only need a modern web browser (Chrome, Firefox, Safari, or Edge).
 
-Installation
+## Installation
 Clone the repo
 
 Bash
@@ -36,14 +36,14 @@ CSS3 - Styling, Flexbox/Grid, and custom animations.
 
 JavaScript (ES6) - Calculation logic and DOM manipulation.
 
-📂 # Project Structure
+# Project Structure 📂
 Plaintext
 cute-calculator/
 ├── index.html       # Main entry point
 ├── style.css        # Styling and layout
 ├── script.js       # Calculation logic
 └── assets/          # Images or icons (if any)
-📝 # Usage
+# Usage 📝 
 Click the buttons or use your keyboard to input numbers.
 
 Select an operator (+, -, *, /).
@@ -52,7 +52,7 @@ Press = or hit Enter to see the result.
 
 Use Backspace to delete the last digit or C to clear the display.
 
-🤝 # Contributing
+# Contributing 🤝 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create.
 
 Fork the Project
