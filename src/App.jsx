@@ -8,6 +8,7 @@ export default function App(){
 const [theme,setTheme] = useState("light")
 const [expression,setExpression] = useState("")
 const [result,setResult] = useState("0")
+const [current,setCurrent] = useState("")
 const [history,setHistory] = useState([])
 const [hearts,setHearts] = useState([])
 
@@ -41,25 +42,57 @@ function handleButton(val,e){
 
   createHeart(e)
 
+  // CLEAR
   if(val==="C"){
     setExpression("")
     setResult("0")
+    setCurrent("")
     return
   }
 
+  // EQUALS
   if(val==="="){
+
     try{
-      const res=eval(expression)
+
+      const res = eval(expression)
+
       setResult(res)
-      setHistory([{exp:expression,res},...history])
+      setCurrent(res.toString())
+
+      setHistory([{exp:expression,res}, ...history])
+
     }
     catch{
       setResult("error")
+      setCurrent("")
     }
+
     return
   }
 
-  setExpression(expression+val)
+
+  // OPERATOR
+  if(["+","-","*","/"].includes(val)){
+
+    const newExp = expression + val
+
+    setExpression(newExp)
+    setCurrent("")
+    setResult("0")
+
+    return
+  }
+
+
+  // NUMBER / DOT
+
+  const newCurrent = current + val
+  const newExp = expression + val
+
+  setCurrent(newCurrent)
+  setExpression(newExp)
+  setResult(newCurrent)
 
 }
 
